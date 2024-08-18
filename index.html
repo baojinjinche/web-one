@@ -1,37 +1,153 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>baobao-web</title>
+    <meta name="description" content="baobao" />
+    <meta name="author" content="baobao" />
+    <meta name="keywords" content="baobao,web,win" />
+    <style>
+      /* * {
+        border: 1px solid black;
+      } */
+      .shadow{
+         box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+         rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+      }
+      .neirongshuxiang::-webkit-scrollbar{
+        display: none;
+      }
+      .flex0 {
+        display: flex;
+      }
+      .flex1 {
+        display: flex;
+        flex-direction: column;
+      }
+      .justify{
+        justify-content: center;
+      }
+      .align{
+        align-items: center;
+      }
+      .margin8px{
+        margin: 8px;
+      }
+      .rmargin8px{
+        margin-right: 8px;
+      }
+      .tmargin8px{
+        margin-top: 8px;
+      }
+      .bmargin8px{
+        margin-bottom: 8px;
+      }
+      @media (max-width: 600px) {
+        .cebian{
+          display: none;
+        }
+        .neirongshuxiang{
+          flex-direction: column;
+        }
+        .shujushuxiang{
+          display: block;
+          flex-direction: column;
+        }
+        .youbianlan{
+          margin-left: 8px;
+        }
+        .shuju{
+          margin: 0 0 8px;
+          flex: auto;
+        }
+      }
+    </style>
+  </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>baobao的网页</title>
-    <mete name="description" content="baobao">
-    <mete name="author" content="baobao">
-    <mete name="keywords" content="baobao，网站web，无敌帅哥">
-</head>
-
-<body>
-    <div style="background-color:#f1f1f1; text-align:center; padding:40px;">
-        <img src="logo.png" alt="baobao" width="100px" height="100px">
-        <p><i><strong style="color: blue">诗词鉴赏</strong></i></p>
+  <body
+    style="margin: 0px; height: 100vh; background-color: #eee"
+    class="flex0"
+  >
+    <!--侧边栏-->
+    <div style="width: 200px; background-color: white; z-index: 2;" class="flex1 shadow cebian">
+      <!--头像栏-->
+      <div class="flex0 align"
+            style="padding: 10px; border-bottom: 1px solid #999;">
+      <img src="logo.png" alt="" width="50px" height="50px">
+      <strong style="margin-left: 10px;">baobao的网页</strong>
+      </div>
+      <!--导航栏-->
+      <div style="flex: 1;">
+      <div style="padding: 10px 20px; border-bottom: 1px solid rgb(190,190,190); font-size: 14px; color: #666;">--导航--</div>
+      <div style="padding: 10px 20px; border-bottom: 1px solid rgb(190,190,190); font-size: 14px; color: #666;">--导航--</div>
+      <div style="padding: 10px 20px; border-bottom: 1px solid rgb(190,190,190); font-size: 14px; color: #666;">--导航--</div>
+      <div style="padding: 10px 20px; border-bottom: 1px solid rgb(190,190,190); font-size: 14px; color: #666;">--导航--</div>
+      <div style="padding: 10px 20px; border-bottom: 1px solid rgb(190,190,190); font-size: 14px; color: #666;">--导航--</div>
+      </div>
     </div>
-        
-    <div style="max-width:700px; margin:20px auto; padding:10px; line-height:1.0; text-align:center;">
-        <h3>阿房宫赋</h3>
-        <p>负栋之柱，多于南亩之农夫；</p>
-        <p>架梁之椽，多于机上之工女；</p>
-        <p>钉头磷磷，多于在庾之粟粒；</p>
-        <p>瓦缝参差，多于周身之帛缕；</p>
-        <p>直栏横槛，多于九土之城郭；</p>
-        <p>管弦呕哑，多于市人之言语。</p>
-        <br><br><br>
+    <!--主区域-->
+    <div style="flex: 1" class="flex1">
+      <!--头部栏-->
+      <div style="height: 60px; background-color: white; z-index: 1;" class="flex0 shadow"></div>
+      <!--次分区-->
+      <div style="flex: 1; overflow: auto;"
+            class="flex0 neirongshuxiang">
+        <!--主内容-->
+        <div style="flex: 3;"
+                class="flex1 margin8px">
+            <!--数据栏-->
+            <div class="flex0 shujushuxiang">
+                <!--数据1-->
+                <div style="height: 100px; background-color: white; flex: 1"
+                class="rmargin8px shadow shuju"></div>
+                <!--数据2-->
+                <div style="height: 100px; background-color: white; flex: 1"
+                class="rmargin8px shadow shuju"></div>
+                <!--数据3-->
+                <div style="height: 100px; background-color: white; flex: 1"
+                class="rmargin8px shadow shuju"></div>
+                <!--数据4-->
+                <div style="height: 100px; background-color: white; flex: 1"
+                class="shadow shuju"></div>
+            </div>
+            <!--内容栏-->
+            <div class="flex1">
+                <!--内容1-->
+                <div style="height: 150px; background-color: white;"
+                class="tmargin8px shadow"></div>
+                <!--内容2-->
+                <div style="height: 150px; background-color: white;"
+                class="tmargin8px shadow"></div>
+                <!--内容3-->
+                <div style="height: 150px; background-color: white;"
+                class="tmargin8px shadow"></div>
+                <!--内容4-->
+                <div style="height: 150px; background-color: white;"
+                class="tmargin8px shadow"></div>
+                <!--内容5-->
+                <div style="height: 150px; background-color: white;"
+                class="tmargin8px shadow"></div>
+                <!--内容6-->
+                <div style="height: 150px; background-color: white;"
+                class="tmargin8px shadow"></div>
+            </div>
+        </div>
+        <!--右边栏-->
+        <div style="flex: 1;"
+                class="flex1 margin8px rmargin8px youbianlan">
+            <!--右栏1-->
+            <div style="height: 150px; background-color: white;"
+            class="shadow"></div>
+            <!--右栏2-->
+            <div style="height: 300px; background-color: white;"
+            class="tmargin8px shadow"></div>
+        </div>
+      </d>
     </div>
-
-    <div style="background-color:#f1f1f1; text-align:center; padding:40px;font-size:12px; ">
-        <p>我的网站</p>
-        <a href="https://fanyi.baidu.com/mtpe-individual/multimodal" target="_ blank">友情链接</a>
-    </div>
-</body>
-
+  </body>
 </html>
